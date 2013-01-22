@@ -1,0 +1,51 @@
+body p {
+color: #898989;
+}
+
+h1, h2, h3, h4 {
+color: #4b4b4b;
+}
+
+/*
+NAVIGATION
+*/
+.navbar {
+border-top: 10px solid #95c055;
+}
+
+.navbar .navbar-inner {
+border: none;
+border-radius: none;
+}
+
+.navbar .nav {
+float: right;
+}
+
+/*
+Benefits
+*/
+
+#benefits {
+background: #f5f5f5;
+}
+
+/* 
+Footer
+*/
+
+footer {
+background: #262626;
+color: #EDEDED;
+text-align: center;
+padding:15px 0;
+}
+
+footer a {
+color: #EDEDED;
+
+}
+
+footer .copyright {
+color: #515151;
+}
