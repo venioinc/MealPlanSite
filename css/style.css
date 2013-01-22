@@ -23,6 +23,22 @@ float: right;
 }
 
 /*
+Masthead
+*/
+
+#masthead {
+background: red;
+color: white;
+}
+
+#masthead h1,
+#masthead h1,
+#masthead p {
+color: white;
+}
+
+
+/*
 Benefits
 */
 
