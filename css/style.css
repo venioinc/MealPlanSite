@@ -32,7 +32,17 @@ NAVIGATION
 .navbar .nav > li > a {
   height: 28px;
   padding-top: 17px;
+  color: #8a8d90;
+  text-transform: uppercase;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
 }
+
+.navbar .nav > .active > a {
+  color: #93c265;  
+}
+
 
 .navbar .brand {
   margin-top: 5px;
