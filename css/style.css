@@ -1,25 +1,44 @@
 body p {
-color: #898989;
+  color: #898989;
 }
 
 h1, h2, h3, h4 {
-color: #4b4b4b;
+  color: #4b4b4b;
 }
 
 /*
 NAVIGATION
 */
 .navbar {
-border-top: 10px solid #95c055;
+  border-top: 10px solid #95c055;
+  background: #f5f5f5;
+  margin-bottom: 0;
 }
 
 .navbar .navbar-inner {
-border: none;
-border-radius: none;
+  border: none;
+  width: 960px;
+  margin: 0 auto;
+  background: transparent;
+  box-shadow: none;
+  height: 55px;
+  /*padding: 10px 0;*/
 }
 
 .navbar .nav {
-float: right;
+  float: right;
+}
+
+.navbar .nav > li > a {
+  height: 28px;
+  padding-top: 17px;
+}
+
+.navbar .brand {
+  margin-top: 5px;
+  padding-left: 50px;
+  background: url('../img/logo.png') no-repeat;
+  color: black;
 }
 
 /*
@@ -27,14 +46,15 @@ Masthead
 */
 
 #masthead {
-background: red;
-color: white;
+  background: url('../img/masthead_bg.png') center top no-repeat;
+  color: white;
+  border-bottom: #92c265 solid 6px;
 }
 
 #masthead h1,
 #masthead h1,
 #masthead p {
-color: white;
+  color: white;
 }
 
 
@@ -43,7 +63,7 @@ Benefits
 */
 
 #benefits {
-background: #f5f5f5;
+  background: #f5f5f5;
 }
 
 /*
@@ -51,22 +71,22 @@ Recipes
 */
 
 #recipes {
-background: #f4f4f4;
+  background: #f4f4f4;
 }
 
 #recipes h2, #recipes h3 {
-text-align: center;
+  text-align: center;
 }
 
 #recipes h3 {
-font-size: 18px;
-font-weight: normal;
-color: #898989;
+  font-size: 18px;
+  font-weight: normal;
+  color: #898989;
 }
 
 #recipes .btn {
-margin-top: 25px;
-margin-bottom: 25px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 /* 
@@ -74,19 +94,18 @@ Footer
 */
 
 .footer {
-background: #262626;
-color: #EDEDED;
-text-align: center;
-padding:15px 0;
+  background: #262626;
+  color: #EDEDED;
+  text-align: center;
+  padding:15px 0;
 }
 
 .footer a {
-color: #EDEDED;
-
+  color: #EDEDED;
 }
 
 .footer .copyright {
-color: #515151;
+  color: #515151;
 }
 
 /*
@@ -94,12 +113,12 @@ BTN overrides
 */
 
 .btn.btn-primary {
-margin: 0 auto;
-display: block;
-width: 225px;
-height: 30px;
-font-size: 20px;
-background: #f89036;
-box-shadow: 0px 5px 1px #c6732b;
-padding-top: 15px;
+  margin: 0 auto;
+  display: block;
+  width: 225px;
+  height: 30px;
+  font-size: 20px;
+  background: #f89036;
+  box-shadow: 0px 5px 1px #c6732b;
+  padding-top: 15px;
 }
