@@ -172,6 +172,10 @@ Masthead
   padding: 25px 0px;
 }
 
+#masthead .masthead-copy {
+  margin-top: 50px;
+}
+
 #masthead h1,
 #masthead h1,
 #masthead p {
@@ -182,8 +186,9 @@ Masthead
 #masthead p {
   width:375px;
   font-size:20px;
-
+  line-height: 120%;
 }
+
 #masthead .iphone-image {
   height: 585px;
   width: 279px;
