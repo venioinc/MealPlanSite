@@ -58,17 +58,35 @@ Fonts
 
 }
 
+@font-face {
+    font-family: 'proxima_nova_ltregular';
+    src: url('../fonts/proximanova-light-webfont.eot');
+    src: url('../fonts/proximanova-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova-light-webfont.woff') format('woff'),
+         url('../fonts/proximanova-light-webfont.ttf') format('truetype'),
+         url('../fonts/proximanova-light-webfont.svg#proxima_nova_ltregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 /*
 Global
 */
 
 body p {
   color: #898989;
-  font-family: 'proxima_nova_rgregular', arial, sans-serif;
+  font-family: 'proxima_nova_ltregular', arial, sans-serif;
 }
 
 h1, h2, h3, h4 {
   color: #4b4b4b;
+}
+
+h1 {
+  font-family: 'proxima_nova_ltbold', 'Helvetica neue', arial, sans-serif;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.25);
 }
 
 h2 {
@@ -85,6 +103,10 @@ h3 {
 
 .underline {
   text-decoration: underline;
+}
+
+.venio-green {
+  color: #95c055;
 }
 
 /*
@@ -381,6 +403,22 @@ Recipes
   background: #f4f4f4;
   border-top: 1px solid #e5e5e5;
   padding-top: 50px;
+}
+
+#recipes .recipe-row {
+  margin: 17px auto;
+  width: 896px;
+}
+
+#recipes .recipe {
+  height: 120px;
+  width: 160px;
+  margin-right: 20px;
+  display: inline-block;
+}
+
+#recipes .recipe:last-child {
+  margin-right: 0;
 }
 
 #recipes h2, #recipes h3 {
