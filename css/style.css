@@ -71,6 +71,18 @@ h1, h2, h3, h4 {
   color: #4b4b4b;
 }
 
+h2 {
+  font-family: 'proxima_nova_rgbold', arial, sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+h3 {
+  font-family: 'proxima_nova_rgregular', arial, sans-serif;
+  font-weight: normal;
+  font-size: 25px;
+}
+
 .underline {
   text-decoration: underline;
 }
@@ -253,12 +265,8 @@ Pricing
 }
 
 #pricing h2,
-#pricing h4 {
+#pricing h3 {
   text-align: center;
-}
-
-#pricing h4{
-  font-weight:normal;
 }
 
 #pricing .images-container{
