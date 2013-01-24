@@ -155,7 +155,9 @@ NAVIGATION
   margin-top: 5px;
   padding-left: 50px;
   background: url('../img/logo.png') no-repeat center left;
-  color: black;
+  color: #333;
+  font-family: 'proxima_nova_ltbold', 'Helvetica Neue', arial, sans-serif;
+  font-weight: normal;
 }
 
 /*
