@@ -30,9 +30,7 @@
                 based on your tastes, habits, and dietary 
                 preferences. Get to the goals you want, 
                 with meals you'll love
-              </p>
-                  
-              <a href="#" class="btn btn-primary">
+              </p>              <a href="#" class="btn btn-primary">
                 Start my FREE trial!
               </a>
               
@@ -51,7 +49,7 @@
           </div>
           <div class="span6">
             <!-- iphone image goes here -->
-            <div class="iphone-image" style="background: blue;width: 300px; height:585px;">
+            <div class="iphone-image">
             </div>
           </div>
         </div>
@@ -62,9 +60,17 @@
         <div class="row">
           <h2>Benefits</h2>
           <div class="span5 offset1">
-            <!-- goal iphone view -->
-            <div class="iphone-image" style="background: red;width: 300px; height:585px;">
+            <!-- carousel images -->
+            <div class="iphone-carousel">
+              <div class="iphone-image">
+                <img src="img/benefits_iphone_1.png" alt="Goal View">
+                <img src="img/benefits_iphone_2.png" alt="Grocery List">
+                <img src="img/benefits_iphone_3.png" alt="Meal Plan View">
+              </div>
+              <div id="pager">
+              </div>
             </div>
+
           </div>
           <div class="span5">
             <h3>Make nutrition work for you.</h3>
@@ -89,40 +95,45 @@
         </div>
       </div>
     </div>
+    <div id="banner">
+      <div class="container">
+        <div class="row">
+          <div class="span12 green-separator">
+            <h2>Are you read to get started?</h2>
+            <a href="#" class="prompt">Try Venio <em class="underline">free</em> for 7 days!</a>
+          </div>
+        </div>
+      </div>
+    </div>
     <div id="pricing">
       <div class="container">
         <div class="row">
-          <div class="span12">
-            <h2>Are you read to get started?</h2>
-            <a href="#" class="btn btn-primary">Try Venio <em class="underline">free</em> for 7 days!</a>
-          </div>
-        </div>
-        <div class="row">
-          <div class="span6 offset3">
+          <div class="span9 offset2">
             <h2>Pricing</h2>
             <h4>Get Venio for the same price of a:</h4>
-            <div class="row">
-              <div class="span2">
-                <div class="image" style="background:blue; width: 130px; height: 130px;"></div>
+
+            <div class="row image-container">
+              <div class="span3">
+                <div class="image coffee"></div>
                 <div class="copy">
                   Mocha Frappuccino
                 </div>
               </div>
-              <div class="span2">
-                <div class="image" style="background:blue; width: 130px; height: 130px;"></div>
+              <div class="span3">
+                <div class="image sandwich"></div>
                 <div class="copy">
                   Sandwich
                 </div>
               </div>
-              <div class="span2">
-                <div class="image" style="background:blue; width: 130px; height: 130px;"></div>
+              <div class="span3">
+                <div class="image taxi"></div>
                 <div class="copy">
                   Short Taxi Ride
                 </div>
               </div>
             </div>
-            <div class="cta-block row">
-              <div class="checklist span3">
+            <div class="cta-block">
+              <div class="checklist">
                 <ul>
                   <li>Dietary Preferences</li>
                   <li>Taste Preferences</li>
@@ -131,14 +142,14 @@
                   <li>Portion Control</li>
                 </ul>
               </div>
-              <div class="cta span3">
+              <div class="cta">
                 <div class="price">
                   $5.99
                 </div>
                 <div class="subtitle">
                   per month
                 </div>
-                <a href="#" class="btn sign-up">
+                <a href="#" class="sign-up">
                   Sign Up
                 </a>
               </div>
@@ -176,7 +187,6 @@
           <a href="#" class="btn btn-primary">Start my FREE trial</a>
         </div>
       </div>
-    </div>
     <footer>
       <div class="container">
         <div class="row footer">
@@ -194,8 +204,9 @@
         </div>
       </div>
     </footer>
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.cycle.all.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

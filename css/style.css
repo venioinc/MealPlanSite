@@ -1,9 +1,66 @@
+/*
+Fonts
+*/
+
+@font-face {
+  font-family: 'proxima_nova_rgbold';
+  src: url('../fonts/proximanova-bold-webfont.eot');
+  src: url('../fonts/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/proximanova-bold-webfont.woff') format('woff'),
+       url('../fonts/proximanova-bold-webfont.ttf') format('truetype'),
+       url('../fonts/proximanova-bold-webfont.svg#proxima_nova_rgbold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'proxima_nova_rgregular';
+  src: url('../fonts/proximanova-regular-webfont.eot');
+  src: url('../fonts/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/proximanova-regular-webfont.woff') format('woff'),
+       url('../fonts/proximanova-regular-webfont.ttf') format('truetype'),
+       url('../fonts/proximanova-regular-webfont.svg#proxima_nova_rgregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'proxima_nova_rgitalic';
+  src: url('../fonts/proximanova-regularit-webfont.eot');
+  src: url('../fonts/proximanova-regularit-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/proximanova-regularit-webfont.woff') format('woff'),
+       url('../fonts/proximanova-regularit-webfont.ttf') format('truetype'),
+       url('../fonts/proximanova-regularit-webfont.svg#proxima_nova_rgitalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'proxima_nova_rgbold_italic';
+  src: url('../fonts/proximanova-boldit-webfont.eot');
+  src: url('../fonts/proximanova-boldit-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/proximanova-boldit-webfont.woff') format('woff'),
+       url('../fonts/proximanova-boldit-webfont.ttf') format('truetype'),
+       url('../fonts/proximanova-boldit-webfont.svg#proxima_nova_rgbold_italic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*
+Global
+*/
+
 body p {
   color: #898989;
+  font-family: 'proxima_nova_rgregular', arial, sans-serif;
 }
 
 h1, h2, h3, h4 {
   color: #4b4b4b;
+}
+
+.underline {
+  text-decoration: underline;
 }
 
 /*
@@ -22,7 +79,6 @@ NAVIGATION
   background: transparent;
   box-shadow: none;
   height: 55px;
-  /*padding: 10px 0;*/
 }
 
 .navbar .nav {
@@ -47,7 +103,7 @@ NAVIGATION
 .navbar .brand {
   margin-top: 5px;
   padding-left: 50px;
-  background: url('../img/logo.png') no-repeat;
+  background: url('../img/logo.png') no-repeat center left;
   color: black;
 }
 
@@ -57,14 +113,51 @@ Masthead
 
 #masthead {
   background: url('../img/masthead_bg.png') center top no-repeat;
+  background-size: cover;
   color: white;
   border-bottom: #92c265 solid 6px;
+  padding: 25px 0px;
 }
 
 #masthead h1,
 #masthead h1,
 #masthead p {
   color: white;
+  font-weight:normal;
+}
+
+#masthead p {
+  width:375px;
+  font-size:20px;
+
+}
+#masthead .iphone-image {
+  height: 585px;
+  width: 279px;
+  margin:0 auto;
+  background: url('../img/masthead_iphone.png') no-repeat;
+}
+
+#masthead .testimonial {
+
+}
+
+#masthead .testimonial .image {
+  display: inline-block;
+  background: url('../img/testimonial_person.png') no-repeat;
+  width:80px;
+  height:80px;
+  vertical-align: top;
+}
+
+#masthead .testimonial .copy {
+  display: inline-block;
+  vertical-align: top;
+}
+
+#masthead .btn {
+  left:0px;
+  margin: 43px 0px 100px;
 }
 
 
@@ -74,8 +167,156 @@ Benefits
 
 #benefits {
   background: #f5f5f5;
+  padding: 75px 0;
 }
 
+#benefits h2 {
+  text-align: center;
+}
+
+#benefits .iphone-image{
+  width: 279px;
+  height: 585px;
+}
+
+#benefits .iphone-carousel {
+  width: 279px;
+}
+
+#pager {
+  width: 51px;
+  margin: 10px auto;
+}
+
+#pager a {
+  display: inline-block;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 13px;
+  height: 13px;
+  background: url('../img/paginator_buttons.png') no-repeat -16px 0px;
+  margin: 0 2px;
+}
+
+#pager a.activeSlide {
+  background-position: 0px 0px;
+}
+/*
+Banner
+*/
+
+#banner{
+  background: url('../img/banner_bg.png') no-repeat center top;
+  height:112px;
+}
+
+#banner h2{
+  color:#5b823f;
+  text-align:center;
+  font-weight:normal;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.25);
+}
+#banner .prompt{
+  background:transparent;
+  font-size: 24px;
+  width:100%;
+  text-align:center;
+  color: white;
+  display:block;
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.25);
+  
+}
+#banner .prompt:hover{
+  text-decoration: none;
+}
+
+/*
+Pricing
+*/
+
+#pricing {
+  background: white;
+}
+
+#pricing h2, 
+#pricing h4 {
+  text-align: center;
+}
+
+#pricing h4{
+  font-weight:normal;
+}
+
+#pricing .image-container{
+  margin-bottom: 70px;
+}
+
+#pricing .image{
+  width:100%;
+  height:130px;
+}
+
+#pricing .coffee{
+  background: url('../img/coffee.png') no-repeat center center;
+}
+
+#pricing .sandwich{
+  background: url('../img/sandwich.png') no-repeat center center;
+}
+#pricing .taxi{
+  background: url('../img/taxi.png') no-repeat center center;
+}
+
+#pricing .copy {
+  text-align: center;
+}
+#pricing .cta-block{
+  border-radius: 15px;
+  border: 4px solid #93c265;
+}
+
+#pricing .checklist,
+#pricing .cta {
+  width: 49%;
+  display: inline-block;
+  vertical-align: top;
+}
+#pricing .cta{
+  display:inline-block;
+}
+
+#pricing .price{
+  font-size:35px;
+  color: #93c265;
+  font-weight:bold;
+  margin:5px;
+}
+#pricing .subtitle{
+  margin:5px;
+  font-size:18px;
+  color: #93c265;
+}
+#pricing .sign-up{
+  border-radius: 5px;
+  text-align: center;
+  width:100px;
+  display:block;
+  background-color:#93c265;
+  color:white;
+  padding: 5px 20px;
+  box-shadow: 0px 5px 0px #7aad48;
+}
+#pricing .sign-up:hover{
+  text-decoration:none;
+}
+#pricing .span3{
+  width:210px;
+}
+#pricing .checklist li {
+  list-style-image: url('../img/checkmark.png');
+  color: #707072;
+}
 /*
 Recipes 
 */
@@ -123,12 +364,13 @@ BTN overrides
 */
 
 .btn.btn-primary {
-  margin: 0 auto;
+  margin: 10px auto;
   display: block;
   width: 225px;
-  height: 30px;
-  font-size: 20px;
+  height: 32px;
+  font-size: 22px;
   background: #f89036;
   box-shadow: 0px 5px 1px #c6732b;
-  padding-top: 15px;
+  padding-top: 13px;
 }
+
