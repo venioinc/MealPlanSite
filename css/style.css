@@ -254,7 +254,9 @@ Banner
 
 #banner{
   background: url('../img/banner_bg.png') no-repeat center top;
-  height:112px;
+  height: 110px;
+  background-size: cover;
+  min-width: 940px;
 }
 
 #banner h2{
