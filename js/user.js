@@ -47,7 +47,7 @@ function GUID ()
         );
 }
 
-function gteUniqueID() {
+function getUniqueID() {
   var session = readCookie(sessionName());
   if (session) {
     return session;
