@@ -432,6 +432,11 @@ Recipes
   display: inline-block;
 }
 
+#recipes .recipe img {
+  height: 120px;
+  width: 160px;
+}
+
 #recipes .recipe:last-child {
   margin-right: 0;
 }
@@ -468,6 +473,15 @@ footer a {
 
 footer .copyright {
   color: #515151;
+}
+
+.modal a {
+  display: block;
+  text-align: center;
+}
+
+.modal a img {
+  height: 80px;
 }
 
 /*
